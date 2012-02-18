@@ -1,0 +1,66 @@
+/*
+
+Visual Frameworks Project 2
+Corey Hobbs
+02/08/12
+
+*/
+a {
+    padding: 2px;
+}
+
+#errors{color:red;}
+
+div {text-align: center;}
+
+h1 {
+    margin: 5px 70px;
+    border: none;
+    padding: 5px;
+    background: none;
+    width: 60%;
+    text-align: center;
+    color: black;
+}
+
+
+ul {
+    border: thin;
+    border-style: solid;
+    border-color: black;
+    background: #CCFFFF;
+    
+}
+
+li {
+    color: black;
+    font-style: normal;
+    font-family: fantasy;
+    font: icon;
+    line-height: normal;
+    letter-spacing: normal
+}
+
+fieldset {border: none;}
+
+legend {
+    color: white;
+    background: black;
+    text-align: left;
+    font-size: medium;
+    padding: 0px 20px;
+    width: auto;
+    border-style: groove;
+    border-color: black;
+}
+
+form {background: #FFFFCC;}
+
+body {background: #FFFFCC;}
+
+input {
+    width: auto;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: bold;
+}
