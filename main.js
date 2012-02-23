@@ -1,6 +1,6 @@
-//Visual Frameworks Project 2
+//Visual Frameworks Project 4
 //Corey Hobbs
-//02/08/12
+//1202
 
 window.addEventListener("DOMContentLoaded", function(){
     function $(x){
@@ -79,7 +79,8 @@ window.addEventListener("DOMContentLoaded", function(){
     function getData(){
         toggleControls("on");
         if(localStorage.length === 0){
-            alert("There are no items to display");
+            alert("There are no items to display so default data was added");
+            autoFillData();
         }
         var makeDiv = document.createElement("div");
         makeDiv.setAttribute("id", "items");
@@ -96,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function(){
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
             makeLi.appendChild(makeSubList);
+            getImage(obj.supplyValue[1], makeSubList);
             for(var n in obj){
                 var makeSubLi = document.createElement("li");
                 makeSubList.appendChild(makeSubLi);
@@ -105,6 +107,22 @@ window.addEventListener("DOMContentLoaded", function(){
             }
             makeItemLinks(localStorage.key(i), linksLi); 
         }
+    }
+    //Auto populate data in local storage
+    function autoFillData(){
+        for(var n in json){
+            var id = Math.floor(Math.random()*100000001);
+            localStorage.setItem(id, JSON.stringify(json[n]));
+        }
+    }
+    
+    //get the image for the right type of item
+    function getImage(catName, makeSubList){
+        var imageLi = document.createElement("Li");
+        makeSubList.appendChild(imageLi);
+        var newImg = document.createElement("img");
+        var setSrc = newImg.setAttribute("src", "images/"+ catName + ".png");
+        imageLi.appendChild(newImg);
     }
     
     function makeItemLinks(key, linksLi){
