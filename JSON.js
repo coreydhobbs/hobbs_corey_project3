@@ -18,9 +18,18 @@ var json = {
         "psupply": ["Party Supply:", "Banner"],
         "hmany": ["How many:", "2"],
         "whowill": ["Who will bring this:", "brother"],
-        "supplyValue": ["Type of Supply:", "Other"],
+        "supplyValue": ["Type of Supply:", "Decoration"],
         "itemStatus": ["Item Status:", "someone else is bringing this"],
         "notes": ["Notes:", "Happy Birthday"]
+    },
+    "item3": {
+        "date": ["Party Date:", "06-17-2012"],
+        "psupply": ["Party Supply:", "whistles"],
+        "hmany": ["How many:", "10"],
+        "whowill": ["Who will bring this:", "john"],
+        "supplyValue": ["Type of Supply:", "Other"],
+        "itemStatus": ["Item Status:", "someone else is bringing this"],
+        "notes": ["Notes:", "loud noise"]
     }
     
 }

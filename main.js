@@ -171,7 +171,12 @@ window.addEventListener("DOMContentLoaded", function(){
                 radios[i].setAttribute("checked", "checked");
             }else if(radios[i].value == "Other" && item.supplyValue[1] == "Other"){
                 radios[i].setAttribute("checked", "checked");
-                
+            }else if(radios[i].value == "Drink" && item.supplyValue[1] == "Drink"){
+                radios[i].setAttribute("checked", "checked");
+            }else if(radios[i].value == "Decoration" && item.supplyValue[1] == "Decoration"){
+                radios[i].setAttribute("checked", "checked");
+            }else if(radios[i].value == "Present" && item.supplyValue[1] == "Present"){
+                radios[i].setAttribute("checked", "checked");
             }
         }
         save.removeEventListener("click", storeData);
