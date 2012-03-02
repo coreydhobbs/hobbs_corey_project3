@@ -39,6 +39,18 @@
                     <li><label for="notes">Notes about item:</label><textarea id="notes" placeholder="Type Notes Here"></textarea></li>
                 </ul>
             </fieldset>
+            <ul id="search"><li><input type="text"/><label for="search"><input type="button" value="search"/></label></li></ul>
+
+                <ul id="catesearch"><li id="pick"><label for="categorySearch">Search by Category:</label>
+                    <select id="categorySearch">
+                        <optgroup label="Category">
+                            <option>--Category--</option>
+                            <option value="Food">Food</option>
+                            <option value="Drink">Drink</option>
+                            <option value="Present">Present</option>
+                            <option value="Decoration">Decoration</option>
+                            <option value="Other">Other</option></li></ul>
+
             <input type="submit" value="Submit Item" id="submit" />
         </form>
             <a href="AddItem.html" id="addNew" style="display:none;">Add New Item

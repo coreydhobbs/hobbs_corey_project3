@@ -256,6 +256,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
 
     }
+
     
     var itemStatus = ["--Status--", "taken care of", "still need", "someone is bringing this" ],
         supplyValue;
